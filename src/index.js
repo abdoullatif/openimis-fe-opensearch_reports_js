@@ -11,6 +11,7 @@ import PaymentIcon from '@material-ui/icons/Payment';
 import ToolIcon from '@material-ui/icons/Build';
 import { FormattedMessage } from '@openimis/fe-core';
 import messagesEn from './translations/en.json';
+import messagesFr from './translations/fr.json';
 import BeneficiaryReportsPage from './pages/BeneficiaryReportsPage';
 import GrievanceReportsPage from './pages/GrievanceReportsPage';
 import InvoiceReportsPage from './pages/InvoiceReportsPage';
@@ -23,7 +24,10 @@ import GroupReportsPage from './pages/GroupReportsPage';
 import DataUpdatesReportsPage from './pages/DataUpdatesReportsPage';
 
 const DEFAULT_CONFIG = {
-  translations: [{ key: 'en', messages: messagesEn }],
+  translations: [
+    { key: 'en', messages: messagesEn },
+    { key: 'fr', messages: messagesFr }
+  ],
   reducers: [{ key: 'openSearchReports', reducer }],
   'core.MainMenu': [{ name: 'OpenSearchReportsMenu', component: OpenSearchReportsMenu }],
   'core.Router': [

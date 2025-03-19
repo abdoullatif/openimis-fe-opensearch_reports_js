@@ -1,0 +1,17 @@
+{
+    "openSearchReports.openSearch": "Tableaux de bord",
+    "openSearchReports.openSearch.beneficiaryReports": "Rapports des bénéficiaires",
+    "openSearchReports.openSearch.invoiceReports": "Rapports de factures",
+    "openSearchReports.openSearch.paymentReports": "Rapports de paiement",
+    "openSearchReports.openSearch.grievanceReports": "Rapports de griefs",
+    "openSearchReports.openSearch.individualReports": "Rapports individuels",
+    "openSearchReports.openSearch.groupReports": "Rapports de groupe",
+    "openSearchReports.openSearch.searcherResultsTitle": "Gérer les rapports et les tableaux de bord",
+    "openSearchReports.openSearch.openSearchConfig": "Gérer les tableaux de bord",
+    "openSearchReports.dashboard.edit": "Modifier le tableau de bord",
+    "openSearchReports.dashboard.name": "Nom du tableau de bord",
+    "openSearchReports.dashboard.url": "URL du tableau de bord",
+    "openSearchReports.dialog.save": "Sauvegarder",
+    "openSearchReports.dialog.cancel": "Annuler",
+    "openSearchReports.dialog.title": "Modifier les détails - {dashboardName}"
+}
