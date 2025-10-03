@@ -18,6 +18,12 @@ function IndividualReportsPages(props) {
   const {
     dashboard,
   } = useSelector((store) => store.openSearchReports);
+  
+  // Debug: Vérification du state Redux
+  //console.log('🔍 Debug IndividualReportsPage:');
+  //console.log('store.openSearchReports:', useSelector((store) => store.openSearchReports));
+  //console.log('dashboard:', dashboard);
+  //console.log('dashboard?.url:', dashboard?.url);
 
   useEffect(() => {
     const params = [`name_Iexact: "${INDIVIDUAL_REPORTS}"`];

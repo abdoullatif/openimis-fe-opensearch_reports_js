@@ -2,16 +2,24 @@ import React from 'react';
 
 /* eslint-disable */
 function OpenSearchDashboard(props) {
-  const currentHostname = window.location.hostname;
-  const openSearchBaseRootPath = process.env.OPENSEARCH_PROXY_ROOT ?? 'opensearch';
+  //const currentHostname = window.location.hostname;
+  const currentHostname = process.env.REACT_APP_OPENSEARCH_HOSTNAME ?? window.location.hostname;
+  const openSearchBaseRootPath = process.env.REACT_APP_OPENSEARCH_PROXY_ROOT ?? 'opensearch';
   const dashboardUrl = props.dashboardUrl;
+  
   return (
     <iframe
-      src={`https://${currentHostname}/${openSearchBaseRootPath}/${dashboardUrl}`}
+      src={`${currentHostname}/${openSearchBaseRootPath}${dashboardUrl}?embed=true&hide-filter-bar=true`}
       title="OpenSearch Dashboard" // Add a unique title property
       style={{ position: 'absolute', width: '80%', height: '90%' }}
       allow="same-origin allow-scripts"
-    />
+      //allow="same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
+      sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+      //embed="true"
+      //hide-filter-bar="true"
+    >
+      <p>Your browser does not support iframes.</p>
+    </iframe>
   );
 };
 
