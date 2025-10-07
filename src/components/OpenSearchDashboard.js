@@ -6,7 +6,8 @@ function OpenSearchDashboard(props) {
   const currentHostname = process.env.REACT_APP_OPENSEARCH_HOSTNAME ?? window.location.hostname;
   const openSearchBaseRootPath = process.env.REACT_APP_OPENSEARCH_PROXY_ROOT ?? 'opensearch';
   const dashboardUrl = props.dashboardUrl;
-  
+  console.log(dashboardUrl);
+  console.log(`${currentHostname}/${openSearchBaseRootPath}${dashboardUrl}?embed=true&hide-filter-bar=true`);
   return (
     <iframe
       src={`${currentHostname}/${openSearchBaseRootPath}${dashboardUrl}?embed=true&hide-filter-bar=true`}
